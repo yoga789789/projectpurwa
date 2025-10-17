@@ -1,6 +1,6 @@
-# 🧮 Data Nilai Siswa – Capstone Project Python
+# Data Nilai Siswa – Capstone Project Python
 
-## 📋 Deskripsi Proyek
+## Deskripsi Proyek
 Program **Data Nilai Siswa** ini dibuat sebagai bagian dari **Capstone Project Python – Modul 1**.  
 Tujuan dari program ini adalah untuk membantu guru atau admin sekolah dalam **mengelola data nilai siswa** secara sederhana melalui **terminal**.  
 Program ini dibuat menggunakan bahasa **Python** dan berjalan berbasis **CLI (Command Line Interface)**.
@@ -10,7 +10,7 @@ Selain itu, semua data ditampilkan dengan format tabel menggunakan library `tabu
 
 ---
 
-## 🚀 Fitur Utama
+## Fitur Utama
 | Fitur | Deskripsi | Komponen Python |
 |-------|------------|----------------|
 | **Create (Tambah Data)** | Menambahkan data siswa baru dengan validasi input (NIS unik, nilai 0–100). | `while`, `if-else`, dictionary |
@@ -21,7 +21,7 @@ Selain itu, semua data ditampilkan dengan format tabel menggunakan library `tabu
 
 ---
 
-## 🧠 Struktur Data
+## Struktur Data
 Semua data siswa disimpan dalam sebuah **dictionary** bernama `daftar_siswa`,  
 dengan format sebagai berikut:
 ```python
@@ -40,35 +40,35 @@ dan **value-nya** adalah dictionary berisi:
 
 ---
 
-## 🧩 Fungsi Utama dalam Program
+## Fungsi Utama dalam Program
 
-### 1️⃣ `tampilkan_siswa()`
+### 1️ `tampilkan_siswa()`
 Menampilkan seluruh data siswa dalam bentuk tabel menggunakan library `tabulate`.
 
-### 2️⃣ `tambah_siswa()`
+### 2️ `tambah_siswa()`
 Menambahkan data baru dengan validasi:
 - NIS harus berupa angka dan belum terdaftar.  
 - Nilai harus di antara 0–100.  
 - Status kelulusan otomatis berdasarkan nilai.
 
-### 3️⃣ `update_data()`
+### 3️ `update_data()`
 Mengubah nama, kelas, atau nilai siswa tertentu.  
 Jika nilai diubah, status kelulusan diperbarui secara otomatis.  
 Terdapat validasi input dan pilihan untuk memperbarui data lagi tanpa keluar dari menu.
 
-### 4️⃣ `hapus_siswa()`
+### 4️ `hapus_siswa()`
 Menghapus data siswa berdasarkan NIS dengan konfirmasi dan tampilan hasil akhir.
 
-### 5️⃣ `cari_siswa()`
+### 5️ `cari_siswa()`
 Mencari siswa berdasarkan nama (dapat sebagian huruf) dan menampilkan hasil pencarian dalam bentuk tabel.
 
-### 6️⃣ `menu_utama()`
+### 6️ `menu_utama()`
 Menampilkan menu interaktif yang menghubungkan seluruh fitur.  
 Menggunakan loop agar program terus berjalan sampai user memilih keluar.
 
 ---
 
-## 🖥️ Cara Menjalankan Program
+##  Cara Menjalankan Program
 1. Pastikan Python sudah terinstal di perangkat Anda.  
    Versi yang disarankan: **Python 3.10 atau lebih baru**.
 
@@ -94,7 +94,7 @@ Menggunakan loop agar program terus berjalan sampai user memilih keluar.
 
 ---
 
-## 📸 Contoh Output
+##  Contoh Output
 ```
 ===Data Siswa YP70B===
 +-------+---------+---------+---------+---------------+
@@ -105,27 +105,6 @@ Menggunakan loop agar program terus berjalan sampai user memilih keluar.
 | 003   | Ramzy   | YP70B   | 71      | Lulus         |
 +-------+---------+---------+---------+---------------+
 ```
-
----
-
-## 🧩 Teknologi yang Digunakan
-- **Python 3** (Core logic)
-- **Tabulate** → Untuk menampilkan tabel rapi di terminal
-- **Dictionary & Looping** → Struktur utama data dan logika kontrol
-- **Conditional Statements** → Validasi input dan penentuan status kelulusan
-
----
-
-## 🏁 Kesimpulan
-Program ini berhasil mengimplementasikan konsep dasar Python seperti:
-- **Collection Data Type (Dictionary)**
-- **Loop dan Conditional Statement**
-- **Function dengan parameter dan return value**
-- **Validasi input user**
-- **Struktur program modular dan maintainable**
-
-Dengan tambahan fitur pencarian dan validasi nilai,  
-program ini memiliki tingkat kompleksitas lebih tinggi dibanding contoh dasar CRUD.
 
 ---
 
